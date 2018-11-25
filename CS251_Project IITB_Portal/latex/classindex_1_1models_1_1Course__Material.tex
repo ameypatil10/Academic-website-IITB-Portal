@@ -1,0 +1,46 @@
+\hypertarget{classindex_1_1models_1_1Course__Material}{}\section{index.\+models.\+Course\+\_\+\+Material Class Reference}
+\label{classindex_1_1models_1_1Course__Material}\index{index.\+models.\+Course\+\_\+\+Material@{index.\+models.\+Course\+\_\+\+Material}}
+
+
+\hyperlink{classindex_1_1models_1_1Course__Material}{Course\+\_\+\+Material} Database.  
+
+
+
+
+Inheritance diagram for index.\+models.\+Course\+\_\+\+Material\+:
+% FIG 0
+
+
+Collaboration diagram for index.\+models.\+Course\+\_\+\+Material\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classindex_1_1models_1_1Course__Material_aa06103c6ca8e7c931872f94d80540565}\label{classindex_1_1models_1_1Course__Material_aa06103c6ca8e7c931872f94d80540565}} 
+def {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classindex_1_1models_1_1Course__Material_a3be9e6853cbed43a05319ed97bcda415}\label{classindex_1_1models_1_1Course__Material_a3be9e6853cbed43a05319ed97bcda415}} 
+{\bfseries course\+\_\+material\+\_\+name} = models.\+Char\+Field(max\+\_\+length=250)
+\item 
+\mbox{\Hypertarget{classindex_1_1models_1_1Course__Material_ac6515b3bc5402fb209dbea8e32f0d466}\label{classindex_1_1models_1_1Course__Material_ac6515b3bc5402fb209dbea8e32f0d466}} 
+{\bfseries course\+\_\+material\+\_\+info} = models.\+Text\+Field()
+\item 
+\mbox{\Hypertarget{classindex_1_1models_1_1Course__Material_a351b489478e74259fb0b79e4a9a573ee}\label{classindex_1_1models_1_1Course__Material_a351b489478e74259fb0b79e4a9a573ee}} 
+{\bfseries parent\+\_\+topic} = models.\+Foreign\+Key(\hyperlink{classindex_1_1models_1_1Topic}{Topic}, on\+\_\+delete=models.\+C\+A\+S\+C\+A\+DE, default=None)
+\item 
+\mbox{\Hypertarget{classindex_1_1models_1_1Course__Material_ad134cae6e11c3bee34718b4d73c76c5b}\label{classindex_1_1models_1_1Course__Material_ad134cae6e11c3bee34718b4d73c76c5b}} 
+{\bfseries course\+\_\+content\+\_\+file} = models.\+File\+Field(null=True, blank=True,)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classindex_1_1models_1_1Course__Material}{Course\+\_\+\+Material} Database. 
+
+Contains information about the course material and the file uploaded. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+I\+I\+T\+B\+Portal/index/models.\+py\end{DoxyCompactItemize}

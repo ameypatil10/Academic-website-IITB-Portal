@@ -1,0 +1,51 @@
+\hypertarget{namespaceIITBPortal_1_1urls}{}\section{I\+I\+T\+B\+Portal.\+urls Namespace Reference}
+\label{namespaceIITBPortal_1_1urls}\index{I\+I\+T\+B\+Portal.\+urls@{I\+I\+T\+B\+Portal.\+urls}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list {\bfseries urlpatterns}
+\item 
+\mbox{\Hypertarget{namespaceIITBPortal_1_1urls_a1e582d0e2f9598f45103e5cf3824ac7e}\label{namespaceIITBPortal_1_1urls_a1e582d0e2f9598f45103e5cf3824ac7e}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+U\+RL}
+\item 
+\mbox{\Hypertarget{namespaceIITBPortal_1_1urls_ad380e5a27854ffcab94dc3010e65a97c}\label{namespaceIITBPortal_1_1urls_ad380e5a27854ffcab94dc3010e65a97c}} 
+{\bfseries document\+\_\+root}
+\item 
+\mbox{\Hypertarget{namespaceIITBPortal_1_1urls_a4fc0cd8fd40c9cfc96dc1427f8a98154}\label{namespaceIITBPortal_1_1urls_a4fc0cd8fd40c9cfc96dc1427f8a98154}} 
+{\bfseries M\+E\+D\+I\+A\+\_\+\+U\+RL}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}IITBPortal URL Configuration
+
+The `urlpatterns` list routes URLs to views. For more information please see:
+https://docs.djangoproject.com/en/1.9/topics/http/urls/
+Examples:
+Function views
+1. Add an import:  from my_app import views
+2. Add a URL to urlpatterns:  url(r'^$', views.home, name='home')
+Class-based views
+1. Add an import:  from other_app.views import Home
+2. Add a URL to urlpatterns:  url(r'^$', Home.as_view(), name='home')
+Including another URLconf
+1. Import the include() function: from django.conf.urls import url, include
+2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceIITBPortal_1_1urls_a86d460434a59f5e6af00c224923a361f}\label{namespaceIITBPortal_1_1urls_a86d460434a59f5e6af00c224923a361f}} 
+\index{I\+I\+T\+B\+Portal\+::urls@{I\+I\+T\+B\+Portal\+::urls}!urlpatterns@{urlpatterns}}
+\index{urlpatterns@{urlpatterns}!I\+I\+T\+B\+Portal\+::urls@{I\+I\+T\+B\+Portal\+::urls}}
+\subsubsection{\texorpdfstring{urlpatterns}{urlpatterns}}
+{\footnotesize\ttfamily list I\+I\+T\+B\+Portal.\+urls.\+urlpatterns}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  [
+2     url(\textcolor{stringliteral}{r'^index/'},include(\textcolor{stringliteral}{'index.urls'})),
+3     url(\textcolor{stringliteral}{r'^admin/'}, admin.site.urls),
+4     \textcolor{comment}{#url(r'^',include('index.urls')),}
+5 ]
+\end{DoxyCode}

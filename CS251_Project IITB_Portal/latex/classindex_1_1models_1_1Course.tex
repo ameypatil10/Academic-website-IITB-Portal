@@ -1,0 +1,69 @@
+\hypertarget{classindex_1_1models_1_1Course}{}\section{index.\+models.\+Course Class Reference}
+\label{classindex_1_1models_1_1Course}\index{index.\+models.\+Course@{index.\+models.\+Course}}
+
+
+\hyperlink{classindex_1_1models_1_1Course}{Course} Database.  
+
+
+
+
+Inheritance diagram for index.\+models.\+Course\+:
+% FIG 0
+
+
+Collaboration diagram for index.\+models.\+Course\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classindex_1_1models_1_1Course_a08db1a3c950dbeaa61e2b0b1c200d4de}{\+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\begin{DoxyCompactList}\small\item\em This function shows what to display whenever the row object itself is requested to be displayed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classindex_1_1models_1_1Course_aeab76f6a9a81750b219143c8db2153a9}\label{classindex_1_1models_1_1Course_aeab76f6a9a81750b219143c8db2153a9}} 
+{\bfseries course\+\_\+code} = models.\+Char\+Field(max\+\_\+length=20,default=\char`\"{}\char`\"{})
+\item 
+\mbox{\Hypertarget{classindex_1_1models_1_1Course_a018da7073e5b2f815e2329d7bd18d737}\label{classindex_1_1models_1_1Course_a018da7073e5b2f815e2329d7bd18d737}} 
+{\bfseries course\+\_\+name} = models.\+Char\+Field(max\+\_\+length=250,default=\char`\"{}\char`\"{})
+\item 
+\mbox{\Hypertarget{classindex_1_1models_1_1Course_af550a855d0d8620b2091bcdc7557de1b}\label{classindex_1_1models_1_1Course_af550a855d0d8620b2091bcdc7557de1b}} 
+{\bfseries course\+\_\+info} = models.\+Char\+Field(max\+\_\+length=500, default=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\Hypertarget{classindex_1_1models_1_1Course_af8449d1aa5a8eeabd0cebb1b6524df77}\label{classindex_1_1models_1_1Course_af8449d1aa5a8eeabd0cebb1b6524df77}} 
+{\bfseries all\+\_\+students} = models.\+Many\+To\+Many\+Field(\hyperlink{classindex_1_1models_1_1Student}{Student})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classindex_1_1models_1_1Course}{Course} Database. 
+
+Contains list of all courses having course name, course code and basic course info. Each row has a many to many relation with rows in \hyperlink{classindex_1_1models_1_1Student}{Student} Database. \begin{DoxyNote}{Note}
+Many\+To\+Many\+Field has been used here to create a many to many relation with \hyperlink{classindex_1_1models_1_1Student}{Student}. It means many \textquotesingle{}Students\textquotesingle{} can be uniquely determined to the same row and many Courses ca 
+\end{DoxyNote}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classindex_1_1models_1_1Course_a08db1a3c950dbeaa61e2b0b1c200d4de}\label{classindex_1_1models_1_1Course_a08db1a3c950dbeaa61e2b0b1c200d4de}} 
+\index{index\+::models\+::\+Course@{index\+::models\+::\+Course}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!index\+::models\+::\+Course@{index\+::models\+::\+Course}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily def index.\+models.\+Course.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+This function shows what to display whenever the row object itself is requested to be displayed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The row object with all its column values \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+I\+I\+T\+B\+Portal/index/models.\+py\end{DoxyCompactItemize}

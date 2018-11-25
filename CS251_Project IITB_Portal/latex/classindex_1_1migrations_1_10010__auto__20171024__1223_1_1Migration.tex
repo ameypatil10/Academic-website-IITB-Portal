@@ -1,0 +1,59 @@
+\hypertarget{classindex_1_1migrations_1_10010__auto__20171024__1223_1_1Migration}{}\section{index.\+migrations.0010\+\_\+auto\+\_\+20171024\+\_\+1223.Migration Class Reference}
+\label{classindex_1_1migrations_1_10010__auto__20171024__1223_1_1Migration}\index{index.\+migrations.\+0010\+\_\+auto\+\_\+20171024\+\_\+1223.\+Migration@{index.\+migrations.\+0010\+\_\+auto\+\_\+20171024\+\_\+1223.\+Migration}}
+
+
+Inheritance diagram for index.\+migrations.0010\+\_\+auto\+\_\+20171024\+\_\+1223.Migration\+:
+% FIG 0
+
+
+Collaboration diagram for index.\+migrations.0010\+\_\+auto\+\_\+20171024\+\_\+1223.Migration\+:
+% FIG 1
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list {\bfseries dependencies}
+\item 
+list {\bfseries operations}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classindex_1_1migrations_1_10010__auto__20171024__1223_1_1Migration_a6223f6b12e11129393984c69fc90342a}\label{classindex_1_1migrations_1_10010__auto__20171024__1223_1_1Migration_a6223f6b12e11129393984c69fc90342a}} 
+\index{index\+::migrations\+::0010\+\_\+auto\+\_\+20171024\+\_\+1223\+::\+Migration@{index\+::migrations\+::0010\+\_\+auto\+\_\+20171024\+\_\+1223\+::\+Migration}!dependencies@{dependencies}}
+\index{dependencies@{dependencies}!index\+::migrations\+::0010\+\_\+auto\+\_\+20171024\+\_\+1223\+::\+Migration@{index\+::migrations\+::0010\+\_\+auto\+\_\+20171024\+\_\+1223\+::\+Migration}}
+\subsubsection{\texorpdfstring{dependencies}{dependencies}}
+{\footnotesize\ttfamily list index.\+migrations.\+0010\+\_\+auto\+\_\+20171024\+\_\+1223.\+Migration.\+dependencies\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  [
+        migrations.swappable\_dependency(settings.AUTH\_USER\_MODEL),
+        (\textcolor{stringliteral}{'index'}, \textcolor{stringliteral}{'0009\_auto\_20171016\_0127'}),
+    ]
+\end{DoxyCode}
+\mbox{\Hypertarget{classindex_1_1migrations_1_10010__auto__20171024__1223_1_1Migration_aab02cfa5126f00c93c3d65bc7f1e5d00}\label{classindex_1_1migrations_1_10010__auto__20171024__1223_1_1Migration_aab02cfa5126f00c93c3d65bc7f1e5d00}} 
+\index{index\+::migrations\+::0010\+\_\+auto\+\_\+20171024\+\_\+1223\+::\+Migration@{index\+::migrations\+::0010\+\_\+auto\+\_\+20171024\+\_\+1223\+::\+Migration}!operations@{operations}}
+\index{operations@{operations}!index\+::migrations\+::0010\+\_\+auto\+\_\+20171024\+\_\+1223\+::\+Migration@{index\+::migrations\+::0010\+\_\+auto\+\_\+20171024\+\_\+1223\+::\+Migration}}
+\subsubsection{\texorpdfstring{operations}{operations}}
+{\footnotesize\ttfamily list index.\+migrations.\+0010\+\_\+auto\+\_\+20171024\+\_\+1223.\+Migration.\+operations\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  [
+        migrations.AddField(
+            model\_name=\textcolor{stringliteral}{'courses'},
+            name=\textcolor{stringliteral}{'all\_students'},
+            field=models.ManyToManyField(to=settings.AUTH\_USER\_MODEL),
+        ),
+        migrations.AddField(
+            model\_name=\textcolor{stringliteral}{'student'},
+            name=\textcolor{stringliteral}{'profile\_pic'},
+            field=models.FileField(default=\textcolor{stringliteral}{'blank-user.jpg'}, upload\_to=\textcolor{stringliteral}{''}),
+        ),
+    ]
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+I\+I\+T\+B\+Portal/index/migrations/0010\+\_\+auto\+\_\+20171024\+\_\+1223.\+py\end{DoxyCompactItemize}

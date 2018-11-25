@@ -1,0 +1,27 @@
+{% extends 'index/base.html' %}
+{% load app_filter %}
+{% block title %}Home{% endblock %}
+
+{% block body %}
+    <h2 margin_left="20px">Welcome to the course page</h2>
+    <h2>{{ course.course_code }} - {{ course.course_name }} <br>
+        <h4>{{ course.course_info }}</h4>
+    </h2>
+    {% if not course|registerd:student %}
+    <form class="form-horizontal" role="form" action="{% url 'index:register_course' course.id %}" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <div style="text-align: center;">
+                                <button type="submit" class="btn btn-success">Enroll</button>
+                            </div>
+                        </div>
+                    </form>
+    {% else %}
+        <div class="form-group">
+                            <div style="text-align: center;">
+                                <button type="submit" class="">Enrolled</button>
+                            </div>
+                        </div>
+    {% endif %}
+
+{% endblock %}

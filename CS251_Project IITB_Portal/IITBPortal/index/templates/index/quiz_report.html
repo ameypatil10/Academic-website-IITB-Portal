@@ -1,0 +1,49 @@
+{% extends 'index/base.html' %}
+{% load app_filter %}
+{% block title %}{{ quiz.quiz_name }}{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+      <h1>{{ quiz.quiz_name }}</h1>
+        <div class="panel">
+            <h3>{{ quiz.quiz_info }}</h3>
+        </div>
+    </div>
+
+    {% for q in Question.objects.all|question_in_quiz:quiz %}
+
+            <div class="container">
+              <h2>Question {{ forloop.counter }}</h2>
+              <div class="panel panel-default">
+                <div class="panel-heading">{{ q.question_text }}</div>
+                <div class="panel-body">
+                    <div class="radio">
+                      <label>A.{{ q.option1 }}</label>
+                    </div>
+                    <div class="radio">
+                     <label>B.{{ q.option2 }}</label>
+                    </div>
+                    <div class="radio">
+                      <label>C.{{ q.option3 }}</label>
+                    </div>
+                    <div class="radio">
+                      <label>D.{{ q.option4 }}</label>
+                    </div>
+                    <div>
+                        YOUR ANSWER : {{ answers|get_item:q.id }}
+                    </div>
+                    <div>
+                        CORRECT ANSWER : {{ q.correct_answer|CAPS }}
+                    </div>
+                    <div>
+                        YOUR SCORE : {{ answers|get_item:q.id|check_answer:q.correct_answer }}
+                    </div>
+                </div>
+              </div>
+            </div>
+
+        {% endfor %}
+
+
+{% endblock %}

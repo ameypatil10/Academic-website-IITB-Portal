@@ -1,0 +1,87 @@
+\hypertarget{classindex_1_1models_1_1Student}{}\section{index.\+models.\+Student Class Reference}
+\label{classindex_1_1models_1_1Student}\index{index.\+models.\+Student@{index.\+models.\+Student}}
+
+
+\hyperlink{classindex_1_1models_1_1Student}{Student} database.  
+
+
+
+
+Inheritance diagram for index.\+models.\+Student\+:
+% FIG 0
+
+
+Collaboration diagram for index.\+models.\+Student\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classindex_1_1models_1_1Student_abf610ed89f9af9fc46ab4bd4b7f96b27}{\+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\begin{DoxyCompactList}\small\item\em This function shows what to display whenever the row object itself is requested to be displayed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classindex_1_1models_1_1Student_a27b474c91d4370b485687fc734093763}\label{classindex_1_1models_1_1Student_a27b474c91d4370b485687fc734093763}} 
+{\bfseries user} = models.\+Foreign\+Key(User)
+\item 
+\mbox{\Hypertarget{classindex_1_1models_1_1Student_ad5d615af26e5af2cffa7b32c0286df51}\label{classindex_1_1models_1_1Student_ad5d615af26e5af2cffa7b32c0286df51}} 
+{\bfseries email\+\_\+id} = models.\+Email\+Field(max\+\_\+length=150,default=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\Hypertarget{classindex_1_1models_1_1Student_adc29034c77610e7c7f17487cc06a0822}\label{classindex_1_1models_1_1Student_adc29034c77610e7c7f17487cc06a0822}} 
+{\bfseries login\+\_\+id} = models.\+Char\+Field(max\+\_\+length=100,default=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\Hypertarget{classindex_1_1models_1_1Student_af6cb61292e389b8c9ce19259aece0c97}\label{classindex_1_1models_1_1Student_af6cb61292e389b8c9ce19259aece0c97}} 
+{\bfseries first\+\_\+name} = models.\+Char\+Field(max\+\_\+length=250,default=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\Hypertarget{classindex_1_1models_1_1Student_a78d7e09fef2ba32b251423fea095ec76}\label{classindex_1_1models_1_1Student_a78d7e09fef2ba32b251423fea095ec76}} 
+{\bfseries last\+\_\+name} = models.\+Char\+Field(max\+\_\+length=250,default=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\Hypertarget{classindex_1_1models_1_1Student_a45859e5f6ef62fc5c808aa13f91bf6ed}\label{classindex_1_1models_1_1Student_a45859e5f6ef62fc5c808aa13f91bf6ed}} 
+{\bfseries phone} = models.\+Char\+Field(max\+\_\+length=250,default=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\Hypertarget{classindex_1_1models_1_1Student_ad0a221a7c4df3eb1bd81faa7dfa3feda}\label{classindex_1_1models_1_1Student_ad0a221a7c4df3eb1bd81faa7dfa3feda}} 
+{\bfseries university} = models.\+Char\+Field(max\+\_\+length=250,default=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\Hypertarget{classindex_1_1models_1_1Student_a67529967816652d0b9bfe6a44adc98d9}\label{classindex_1_1models_1_1Student_a67529967816652d0b9bfe6a44adc98d9}} 
+{\bfseries city} = models.\+Char\+Field(max\+\_\+length=250,default=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\Hypertarget{classindex_1_1models_1_1Student_aef0887df6bb0d59e9adbbb0778dea3e0}\label{classindex_1_1models_1_1Student_aef0887df6bb0d59e9adbbb0778dea3e0}} 
+{\bfseries profile\+\_\+pic} = models.\+File\+Field(default=\textquotesingle{}blank-\/user.\+jpg\textquotesingle{})
+\item 
+\mbox{\Hypertarget{classindex_1_1models_1_1Student_ad4b4c126adac9e0b610dbe8b4c52a1f8}\label{classindex_1_1models_1_1Student_ad4b4c126adac9e0b610dbe8b4c52a1f8}} 
+{\bfseries is\+\_\+professor} = models.\+Boolean\+Field(default=False)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classindex_1_1models_1_1Student}{Student} database. 
+
+Contains the details of the Students or the Professors. Every row in database is unique to a particular user. This is confirmed by unique username and password. \begin{DoxyNote}{Note}
+is\+Professor is a Boolean field. If checked, it means the corresponding User gets the priveleges of a professor. This can only be set by the django-\/admin. 
+\end{DoxyNote}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classindex_1_1models_1_1Student_abf610ed89f9af9fc46ab4bd4b7f96b27}\label{classindex_1_1models_1_1Student_abf610ed89f9af9fc46ab4bd4b7f96b27}} 
+\index{index\+::models\+::\+Student@{index\+::models\+::\+Student}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!index\+::models\+::\+Student@{index\+::models\+::\+Student}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily def index.\+models.\+Student.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+This function shows what to display whenever the row object itself is requested to be displayed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The row object with all its column values \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+I\+I\+T\+B\+Portal/index/models.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,27 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node9 [label="Model",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node9 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="index.models.Assignment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classindex_1_1models_1_1Assignment.html",tooltip="Assignment Database. "];
+  Node9 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="index.models.Assignment\l_Submission",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classindex_1_1models_1_1Assignment__Submission.html"];
+  Node9 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="index.models.Course",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classindex_1_1models_1_1Course.html",tooltip="Course Database. "];
+  Node9 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="index.models.Course\l_Material",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classindex_1_1models_1_1Course__Material.html",tooltip="Course_Material Database. "];
+  Node9 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="index.models.Interest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classindex_1_1models_1_1Interest.html",tooltip="Interest Database. "];
+  Node9 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="index.models.News_feed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classindex_1_1models_1_1News__feed.html",tooltip="Newsfeed Database. "];
+  Node9 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="index.models.Question",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classindex_1_1models_1_1Question.html"];
+  Node9 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="index.models.Quiz",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classindex_1_1models_1_1Quiz.html",tooltip="Quiz Database. "];
+  Node9 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="index.models.Student",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classindex_1_1models_1_1Student.html",tooltip="Student database. "];
+  Node9 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="index.models.Topic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classindex_1_1models_1_1Topic.html",tooltip="Topic Database. "];
+}

@@ -1,0 +1,63 @@
+{% extends 'index/base.html' %}
+{% load app_filter %}
+{% block title %}{{ quiz.quiz_name }}{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+      <h1>{{ quiz.quiz_name }}</h1>
+        <div class="panel">
+            <h3>{{ quiz.quiz_info }}</h3>
+        </div>
+    </div>
+
+    <form class="form-horizontal" role="form" action="{% url 'index:quiz_report' quiz.id %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        {% for q in Question.objects.all|question_in_quiz:quiz %}
+
+            <div class="container">
+              <h2>Question {{ forloop.counter }}</h2>
+              <div class="panel panel-default">
+                <div class="panel-heading">{{ q.question_text }}</div>
+                <div class="panel-body">
+                    <div class="radio">
+                      <label><input type="radio" name="{{ q.id }}" value="A">A. {{ q.option1 }}</label>
+                    </div>
+                    <div class="radio">
+                      <label><input type="radio"name="{{ q.id }}" value="B">B. {{ q.option2 }}</label>
+                    </div>
+                    <div class="radio">
+                      <label><input type="radio" name="{{ q.id }}" value="C">C. {{ q.option3 }}</label>
+                    </div>
+                    <div class="radio">
+                      <label><input type="radio" name="{{ q.id }}" value="D">D. {{ q.option4 }}</label>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+        {% endfor %}
+
+        <div class="form-group">
+                <div style="text-align: left; margin-left: 20px;">
+                <button type="submit" class="btn btn-success">Submit Quiz</button>
+                </div>
+        </div>
+    </form>
+    <br><br>
+
+
+    {% if student.is_professor %}
+        <form class="form-horizontal" role="form" action="{% url 'index:add_question' quiz.id %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-group">
+                <div style="text-align: left; margin-left: 20px;">
+                    <button type="submit" class="btn btn-success">Add Question</button>
+                </div>
+            </div>
+        </form>
+        <br><br>
+    {% endif%}
+
+{% endblock %}

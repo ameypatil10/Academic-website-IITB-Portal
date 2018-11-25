@@ -1,0 +1,45 @@
+{% extends 'index/base.html' %}
+{% load app_filter %}
+{% block title %}Home{% endblock %}
+{% block home_active %}class= "active"{% endblock %}
+{% block body %}
+<style>
+    .content {
+        width: 80%;
+        border: 1px solid;
+        padding: 20px;
+        overflow: hidden;
+    }
+
+    .content img {
+        margin-right: 15px;
+        float: left;
+    }
+</style>
+
+    <h2>Welcome to IITB-Portal</h2><br>
+    <ul>
+        {% for feed in news_feed %}
+        {% if feed.my_tag in interests|interest_name %}
+        <div class="content">
+            <a href={{ feed.href_url }} target="_blank">{% autoescape off %} {{ feed.image_url }}
+                {% endautoescape %} </a>
+            <div>
+                <h3><a href={{ feed.href_url }} target="_blank">{{ feed.topic }}</a></h3>
+                <p>{{ feed.desc }}</p>
+                <em style="float:right;"> {{ feed.date }} <br> {{ feed.my_tag }} </em>
+
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </ul>
+    <form class="form-horizontal" role="form" action="{% url 'index:refresh_feed'%}" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="form-group" style="align:right">
+                            <div style="text-align: right; margin:10%">
+                                <warning>Warning : Feed updation will take some time. Be patient.<br> <hr></warning> <button type="submit" class="btn btn-success">Refresh Feed</button>
+                            </div>
+                        </div>
+                    </form>
+{% endblock %}

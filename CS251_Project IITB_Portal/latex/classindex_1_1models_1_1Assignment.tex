@@ -1,0 +1,75 @@
+\hypertarget{classindex_1_1models_1_1Assignment}{}\section{index.\+models.\+Assignment Class Reference}
+\label{classindex_1_1models_1_1Assignment}\index{index.\+models.\+Assignment@{index.\+models.\+Assignment}}
+
+
+\hyperlink{classindex_1_1models_1_1Assignment}{Assignment} Database.  
+
+
+
+
+Inheritance diagram for index.\+models.\+Assignment\+:
+% FIG 0
+
+
+Collaboration diagram for index.\+models.\+Assignment\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classindex_1_1models_1_1Assignment_a3979c226df312c7527826796407afe7d}{\+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\begin{DoxyCompactList}\small\item\em This function shows what to display whenever the row object itself is requested to be displayed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classindex_1_1models_1_1Assignment_aaba1da5934719ffc920a54f0c898e7db}\label{classindex_1_1models_1_1Assignment_aaba1da5934719ffc920a54f0c898e7db}} 
+{\bfseries assignment\+\_\+name} = models.\+Char\+Field(max\+\_\+length=250, default=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\Hypertarget{classindex_1_1models_1_1Assignment_a6cb471e3afa7b0bd23639d0a38671309}\label{classindex_1_1models_1_1Assignment_a6cb471e3afa7b0bd23639d0a38671309}} 
+{\bfseries assignment\+\_\+info} = models.\+Char\+Field(max\+\_\+length=500, default=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\Hypertarget{classindex_1_1models_1_1Assignment_a1b63cd97bcf1373facb7ba0cc5aa109f}\label{classindex_1_1models_1_1Assignment_a1b63cd97bcf1373facb7ba0cc5aa109f}} 
+{\bfseries parent\+\_\+topic} = models.\+Foreign\+Key(\hyperlink{classindex_1_1models_1_1Topic}{Topic}, on\+\_\+delete=models.\+C\+A\+S\+C\+A\+DE, default=None)
+\item 
+\mbox{\Hypertarget{classindex_1_1models_1_1Assignment_a339c88ad6424d5aa1da49fe40eb8102c}\label{classindex_1_1models_1_1Assignment_a339c88ad6424d5aa1da49fe40eb8102c}} 
+{\bfseries assignment\+\_\+content\+\_\+file} = models.\+File\+Field(null=True, blank=True,)
+\item 
+\mbox{\Hypertarget{classindex_1_1models_1_1Assignment_a2486e6e3f79730503b0fdecc7df1d3b1}\label{classindex_1_1models_1_1Assignment_a2486e6e3f79730503b0fdecc7df1d3b1}} 
+{\bfseries date\+\_\+added} = models.\+Date\+Time\+Field(default=datetime.\+now)
+\item 
+\mbox{\Hypertarget{classindex_1_1models_1_1Assignment_a637e73eddb2e5d943585f772b280a809}\label{classindex_1_1models_1_1Assignment_a637e73eddb2e5d943585f772b280a809}} 
+{\bfseries deadline} = models.\+Date\+Time\+Field(default=datetime.\+now)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classindex_1_1models_1_1Assignment}{Assignment} Database. 
+
+Contains Information about assignments. Row contains the name, information, topic, course, deadline and the file uploaded. \begin{DoxyNote}{Note}
+Many to Many Field with User 
+\end{DoxyNote}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classindex_1_1models_1_1Assignment_a3979c226df312c7527826796407afe7d}\label{classindex_1_1models_1_1Assignment_a3979c226df312c7527826796407afe7d}} 
+\index{index\+::models\+::\+Assignment@{index\+::models\+::\+Assignment}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!index\+::models\+::\+Assignment@{index\+::models\+::\+Assignment}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily def index.\+models.\+Assignment.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+This function shows what to display whenever the row object itself is requested to be displayed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The row object with all its column values \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+I\+I\+T\+B\+Portal/index/models.\+py\end{DoxyCompactItemize}

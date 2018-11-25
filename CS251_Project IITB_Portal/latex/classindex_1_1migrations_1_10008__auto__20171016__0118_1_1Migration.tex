@@ -1,0 +1,66 @@
+\hypertarget{classindex_1_1migrations_1_10008__auto__20171016__0118_1_1Migration}{}\section{index.\+migrations.0008\+\_\+auto\+\_\+20171016\+\_\+0118.Migration Class Reference}
+\label{classindex_1_1migrations_1_10008__auto__20171016__0118_1_1Migration}\index{index.\+migrations.\+0008\+\_\+auto\+\_\+20171016\+\_\+0118.\+Migration@{index.\+migrations.\+0008\+\_\+auto\+\_\+20171016\+\_\+0118.\+Migration}}
+
+
+Inheritance diagram for index.\+migrations.0008\+\_\+auto\+\_\+20171016\+\_\+0118.Migration\+:
+% FIG 0
+
+
+Collaboration diagram for index.\+migrations.0008\+\_\+auto\+\_\+20171016\+\_\+0118.Migration\+:
+% FIG 1
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list {\bfseries dependencies}
+\item 
+list {\bfseries operations}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classindex_1_1migrations_1_10008__auto__20171016__0118_1_1Migration_ad66f7a16940bd67a143ca88c80a26256}\label{classindex_1_1migrations_1_10008__auto__20171016__0118_1_1Migration_ad66f7a16940bd67a143ca88c80a26256}} 
+\index{index\+::migrations\+::0008\+\_\+auto\+\_\+20171016\+\_\+0118\+::\+Migration@{index\+::migrations\+::0008\+\_\+auto\+\_\+20171016\+\_\+0118\+::\+Migration}!dependencies@{dependencies}}
+\index{dependencies@{dependencies}!index\+::migrations\+::0008\+\_\+auto\+\_\+20171016\+\_\+0118\+::\+Migration@{index\+::migrations\+::0008\+\_\+auto\+\_\+20171016\+\_\+0118\+::\+Migration}}
+\subsubsection{\texorpdfstring{dependencies}{dependencies}}
+{\footnotesize\ttfamily list index.\+migrations.\+0008\+\_\+auto\+\_\+20171016\+\_\+0118.\+Migration.\+dependencies\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  [
+        (\textcolor{stringliteral}{'index'}, \textcolor{stringliteral}{'0007\_auto\_20171011\_1503'}),
+    ]
+\end{DoxyCode}
+\mbox{\Hypertarget{classindex_1_1migrations_1_10008__auto__20171016__0118_1_1Migration_a4ae512aa4bc0e3d81d49eabf9d6f39d5}\label{classindex_1_1migrations_1_10008__auto__20171016__0118_1_1Migration_a4ae512aa4bc0e3d81d49eabf9d6f39d5}} 
+\index{index\+::migrations\+::0008\+\_\+auto\+\_\+20171016\+\_\+0118\+::\+Migration@{index\+::migrations\+::0008\+\_\+auto\+\_\+20171016\+\_\+0118\+::\+Migration}!operations@{operations}}
+\index{operations@{operations}!index\+::migrations\+::0008\+\_\+auto\+\_\+20171016\+\_\+0118\+::\+Migration@{index\+::migrations\+::0008\+\_\+auto\+\_\+20171016\+\_\+0118\+::\+Migration}}
+\subsubsection{\texorpdfstring{operations}{operations}}
+{\footnotesize\ttfamily list index.\+migrations.\+0008\+\_\+auto\+\_\+20171016\+\_\+0118.\+Migration.\+operations\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  [
+        migrations.CreateModel(
+            name=\textcolor{stringliteral}{'courses'},
+            fields=[
+                (\textcolor{stringliteral}{'id'}, models.AutoField(auto\_created=\textcolor{keyword}{True}, primary\_key=\textcolor{keyword}{True}, serialize=\textcolor{keyword}{False}, verbose\_name=\textcolor{stringliteral}{
+      'ID'})),
+                (\textcolor{stringliteral}{'course\_code'}, models.CharField(default=\textcolor{stringliteral}{''}, max\_length=20)),
+                (\textcolor{stringliteral}{'course\_name'}, models.CharField(default=\textcolor{stringliteral}{''}, max\_length=250)),
+            ],
+        ),
+        migrations.RemoveField(
+            model\_name=\textcolor{stringliteral}{'student'},
+            name=\textcolor{stringliteral}{'courses'},
+        ),
+        migrations.AddField(
+            model\_name=\textcolor{stringliteral}{'courses'},
+            name=\textcolor{stringliteral}{'course'},
+            field=models.ForeignKey(on\_delete=django.db.models.deletion.CASCADE, to=\textcolor{stringliteral}{'index.student'}),
+        ),
+    ]
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+I\+I\+T\+B\+Portal/index/migrations/0008\+\_\+auto\+\_\+20171016\+\_\+0118.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,63 @@
+\hypertarget{classindex_1_1migrations_1_10020__auto__20171025__2032_1_1Migration}{}\section{index.\+migrations.0020\+\_\+auto\+\_\+20171025\+\_\+2032.Migration Class Reference}
+\label{classindex_1_1migrations_1_10020__auto__20171025__2032_1_1Migration}\index{index.\+migrations.\+0020\+\_\+auto\+\_\+20171025\+\_\+2032.\+Migration@{index.\+migrations.\+0020\+\_\+auto\+\_\+20171025\+\_\+2032.\+Migration}}
+
+
+Inheritance diagram for index.\+migrations.0020\+\_\+auto\+\_\+20171025\+\_\+2032.Migration\+:
+% FIG 0
+
+
+Collaboration diagram for index.\+migrations.0020\+\_\+auto\+\_\+20171025\+\_\+2032.Migration\+:
+% FIG 1
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list {\bfseries dependencies}
+\item 
+list {\bfseries operations}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classindex_1_1migrations_1_10020__auto__20171025__2032_1_1Migration_a62af6bbe3e92131ed8407714fdae48d7}\label{classindex_1_1migrations_1_10020__auto__20171025__2032_1_1Migration_a62af6bbe3e92131ed8407714fdae48d7}} 
+\index{index\+::migrations\+::0020\+\_\+auto\+\_\+20171025\+\_\+2032\+::\+Migration@{index\+::migrations\+::0020\+\_\+auto\+\_\+20171025\+\_\+2032\+::\+Migration}!dependencies@{dependencies}}
+\index{dependencies@{dependencies}!index\+::migrations\+::0020\+\_\+auto\+\_\+20171025\+\_\+2032\+::\+Migration@{index\+::migrations\+::0020\+\_\+auto\+\_\+20171025\+\_\+2032\+::\+Migration}}
+\subsubsection{\texorpdfstring{dependencies}{dependencies}}
+{\footnotesize\ttfamily list index.\+migrations.\+0020\+\_\+auto\+\_\+20171025\+\_\+2032.\+Migration.\+dependencies\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  [
+        (\textcolor{stringliteral}{'index'}, \textcolor{stringliteral}{'0019\_auto\_20171025\_1939'}),
+    ]
+\end{DoxyCode}
+\mbox{\Hypertarget{classindex_1_1migrations_1_10020__auto__20171025__2032_1_1Migration_a9d5dc8f08beee14d41abd6e7b643eae3}\label{classindex_1_1migrations_1_10020__auto__20171025__2032_1_1Migration_a9d5dc8f08beee14d41abd6e7b643eae3}} 
+\index{index\+::migrations\+::0020\+\_\+auto\+\_\+20171025\+\_\+2032\+::\+Migration@{index\+::migrations\+::0020\+\_\+auto\+\_\+20171025\+\_\+2032\+::\+Migration}!operations@{operations}}
+\index{operations@{operations}!index\+::migrations\+::0020\+\_\+auto\+\_\+20171025\+\_\+2032\+::\+Migration@{index\+::migrations\+::0020\+\_\+auto\+\_\+20171025\+\_\+2032\+::\+Migration}}
+\subsubsection{\texorpdfstring{operations}{operations}}
+{\footnotesize\ttfamily list index.\+migrations.\+0020\+\_\+auto\+\_\+20171025\+\_\+2032.\+Migration.\+operations\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  [
+        migrations.AddField(
+            model\_name=\textcolor{stringliteral}{'quiz'},
+            name=\textcolor{stringliteral}{'quiz\_info'},
+            field=models.CharField(default=\textcolor{stringliteral}{''}, max\_length=500),
+        ),
+        migrations.AlterField(
+            model\_name=\textcolor{stringliteral}{'course'},
+            name=\textcolor{stringliteral}{'all\_students'},
+            field=models.ManyToManyField(default=\textcolor{keywordtype}{None}, to=\textcolor{stringliteral}{'index.Student'}),
+        ),
+        migrations.AlterField(
+            model\_name=\textcolor{stringliteral}{'interest'},
+            name=\textcolor{stringliteral}{'all\_students'},
+            field=models.ManyToManyField(to=\textcolor{stringliteral}{'index.Student'}),
+        ),
+    ]
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+I\+I\+T\+B\+Portal/index/migrations/0020\+\_\+auto\+\_\+20171025\+\_\+2032.\+py\end{DoxyCompactItemize}
